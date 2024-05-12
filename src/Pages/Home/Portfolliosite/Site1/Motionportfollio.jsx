@@ -25,14 +25,14 @@ import coverdonation from "../../../../assets/portfollio/donation/cover.png";
 import leftdonation from "../../../../assets/portfollio/donation/left.png";
 import rightdonation from "../../../../assets/portfollio/donation/right.png";
 // -------------icon------------
-import tech from "../../../../assets/icon/tech.png";
+import techicon from "../../../../assets/icon/tech.png";
 import hotel from "../../../../assets/icon/logo.png";
 import convert from "../../../../assets/icon/ourconvert.png";
 import scanner from "../../../../assets/icon/scannerpre.png";
 
 const projects = [
   {
-    icon: tech,
+    icon: techicon,
     name: "World Technology",
     cover: techcover,
     leftImage: techright,
