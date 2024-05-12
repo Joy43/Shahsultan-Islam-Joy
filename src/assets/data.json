@@ -1,0 +1,11 @@
+{
+    "name": "Sample Project",
+    "logo":"https://www.example.com",
+    "cover_image": "https://www.example.com",
+    "left_image": "https://www.example.com",
+    "right_image": "https://www.example.com",
+    "title": "Sample Project Title",
+    "description": "This is a sample project description.It can contain information about the project and its features.",
+    "visit_url": "https://www.example.com"
+  }
+  
