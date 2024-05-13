@@ -1,7 +1,5 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
-import { FaCartShopping, FaUsersLine } from "react-icons/fa6";
-import { MdAdminPanelSettings } from "react-icons/md";
-import { MdVerifiedUser } from "react-icons/md";
+import { FaUsersLine } from "react-icons/fa6";
 
 const DashBoadSidebar = () => {
   return (

@@ -4,6 +4,7 @@ import ModalFeedback from "../../Feedback/ModalFeedback";
 
 import Allskill from "../../SkillsProgress/Allskill";
 import SkillProgress from "../../SkillsProgress/SkillProgress";
+import SkillProgressBars from "../../SkillsProgress/Tailwindcss";
 import Aboutus from "../Aboutus/AboutUs";
 import Banner from "../Banner/Banner";
 import Motionportfolli from "../Portfolliosite/Site1/Motionportfollio";
@@ -21,6 +22,9 @@ const Home = () => {
       </div>
       <div>
         <Allskill></Allskill>
+      </div>
+      <div className="grid ">
+        <SkillProgressBars></SkillProgressBars>
       </div>
       <div>
         <Motionportfolli></Motionportfolli>

@@ -1,15 +1,33 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../Pages/Shared/Navbar/Navbar";
 import Footer from "../Pages/Shared/Footer/Footer";
+import Loader from "../Pages/Shared/Loading/Loding";
+import { useEffect, useState } from "react";
 
-const Mainlayout = () => {
+const MainLayout = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    // Simulate loading delay
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <div>
-      <Navbar></Navbar>
-      <Outlet></Outlet>
-      <Footer></Footer>
+      {isLoading ? (
+        <Loader></Loader> // Corrected spelling
+      ) : (
+        <div>
+          <Navbar></Navbar>
+          <Outlet></Outlet>
+          <Footer></Footer>
+        </div>
+      )}
     </div>
   );
 };
 
-export default Mainlayout;
+export default MainLayout; // Corrected component name

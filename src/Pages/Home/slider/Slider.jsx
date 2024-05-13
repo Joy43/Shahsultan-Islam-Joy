@@ -21,9 +21,9 @@ export const Slider = () => {
   }, [currentSlider]);
 
   return (
-    <div className="w-full lg:ml-20 h-[240px] md:h-[540px] flex flex-col lg:flex-row items-center overflow-hidden gap-5 lg:gap-10 px-10">
+    <div className="w-full lg:ml-28 h-[240px] md:h-[540px] flex flex-col lg:flex-row items-center overflow-hidden gap-5 lg:gap-10 px-10">
       <div className="relative overflow-hidden">
-        {/* dots */}
+        {/* ---------dots------------- */}
         <div className="flex h-fit rounded-full z-50 absolute right-0 bottom-1/2 w-fit gap-1 rotate-90">
           {sliders.map((_, inx) => (
             <button
