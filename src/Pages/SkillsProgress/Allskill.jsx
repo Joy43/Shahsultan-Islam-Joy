@@ -19,7 +19,7 @@ const Allskill = () => {
           }}
         />
       </div>
-      <div className="shadow-2xl gap-3 mb-3 mt-2 grid lg:grid-cols-4 sm:grid-cols-2  p-3">
+      <div className="shadow-2xl gap-3 mb-3 mt-2 grid lg:grid-cols-4 sm:grid-cols-2 mx-auto  p-3">
         <SkillProgress></SkillProgress>
         <SkillNodejs></SkillNodejs>
         <Skilljs></Skilljs>

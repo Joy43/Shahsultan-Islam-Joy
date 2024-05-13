@@ -120,7 +120,7 @@ const SkillProgressBars = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-4 gap-4 sm:grid">
+    <div className="grid grid-cols-4 gap-4 sm:grid mx-auto">
       {skills.map((skill) => (
         <div key={skill.id}>
           <CircularProgressBar

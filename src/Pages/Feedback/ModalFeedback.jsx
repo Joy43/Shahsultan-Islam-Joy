@@ -2,13 +2,14 @@ import { useState } from "react";
 import AddFeedback from "./AddFeedback";
 import feedbackimg from "../../assets/portfollio/feedback/Feedback Request.png";
 import { TbArrowBigRightLineFilled } from "react-icons/tb";
+import { BsSendPlusFill } from "react-icons/bs";
 const ModalFeedback = () => {
   const [openModal, setOpenModal] = useState(false);
   return (
     <div>
       <div className="flex flex-col w-full lg:flex-row">
         <div className="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center">
-          <img className="w-56" src={feedbackimg} alt="" />
+          <img className="w-56 " src={feedbackimg} alt="" />
         </div>
 
         {/*------------- divider---------- */}
@@ -21,28 +22,16 @@ const ModalFeedback = () => {
           <div className="w-72 mx-auto flex items-center justify-center">
             <div className="stats shadow">
               <div onClick={() => setOpenModal(true)} className="stat">
-                <div className="stat-figure bg-green text-primary">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    className="inline-block w-8 h-8 stroke-current"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                    ></path>
-                  </svg>
-                </div>
-                <div className="stat-title">
-                  {" "}
-                  <button className="btn font-bold text-xl btn-success text-text p-2 rounded-lg">
-                    Adding Feedback
+                <div className="stat-figure bg-green text-primary"></div>
+                <div className="stat-title  ">
+                  <button className=" flex items-center text-lg gap-2 bg-blue-500  hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                    <span className="animate-ping">
+                      <BsSendPlusFill />
+                    </span>
+                    Add Now Feedback
                   </button>
                 </div>
-                <div className="stat-value text-primary">+9</div>
+                <div className="stat-value text-primary ">+9 Feedback</div>
               </div>
             </div>
             {/* -------right side--------- */}

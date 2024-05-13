@@ -48,7 +48,7 @@ const Skilljs = () => {
         }}
       >
         {/* Arbitrary content */}
-        <div className="items-center justify-center text-lg text-yellow-300">
+        <div className="items-center justify-center text-lg text-yellow-500">
           <TbBrandJavascript className="text-4xl text-center ml-16" />
           <strong className="text-2xl">
             {percentage}% <span>Javascript</span>
