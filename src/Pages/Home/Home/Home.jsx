@@ -7,6 +7,7 @@ import SkillProgress from "../../SkillsProgress/SkillProgress";
 import SkillProgressBars from "../../SkillsProgress/Tailwindcss";
 import Aboutus from "../Aboutus/AboutUs";
 import Banner from "../Banner/Banner";
+import Certificate from "../Certificate/certificate";
 import Motionportfolli from "../Portfolliosite/Site1/Motionportfollio";
 import { Slider } from "../slider/Slider";
 
@@ -39,6 +40,7 @@ const Home = () => {
       <div className="bg-red-500">
         <ModalFeedback></ModalFeedback>
       </div>
+      <Certificate></Certificate>
     </div>
   );
 };

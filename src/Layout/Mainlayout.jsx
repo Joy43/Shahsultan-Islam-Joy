@@ -30,4 +30,4 @@ const MainLayout = () => {
   );
 };
 
-export default MainLayout; // Corrected component name
+export default MainLayout; 

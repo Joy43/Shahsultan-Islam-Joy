@@ -10,6 +10,7 @@ import Contact from "../Pages/Contact/Contact";
 import ContactInfo from "../Pages/Dashboad/Contactinfo/ContactInfo";
 import UserInfo from "../Pages/Dashboad/Dashboad/UserInfo/UserInfo";
 import DashBoadSidebar from "../Pages/Dashboad/Dashboad/Dashboad/DashBoadSidebar";
+import Certificate from "../Pages/Home/Certificate/certificate";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
       {
         path: "/portfollio",
         element: <Motionportfolli></Motionportfolli>,
+      },
+      {
+        path: "certificate",
+        element: <Certificate></Certificate>,
       },
       {
         path: "/contact",
