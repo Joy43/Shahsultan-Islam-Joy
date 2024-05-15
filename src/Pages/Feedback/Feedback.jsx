@@ -6,7 +6,6 @@ const Feedback = () => {
   const [loading, setLoading] = useState(true);
   const [currentSlider, setCurrentSlider] = useState(0);
 
-  console.log(issuedata);
   useEffect(() => {
     axios
       .get("https://portfollio-server-seven.vercel.app/portfollio")

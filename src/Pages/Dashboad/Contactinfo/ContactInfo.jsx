@@ -2,7 +2,7 @@ import useContact from "../../../Hooks/useContant";
 
 const ContactInfo = () => {
   const [contactInfo] = useContact(); // Assuming useContact returns an array of contact information
-  console.log(contactInfo);
+
   return (
     <div className="grid md:grid-cols-3 gap-5">
       {contactInfo.map((contact, index) => (

@@ -50,7 +50,7 @@ const Navbar = () => {
   );
   return (
     <div>
-      <div className="navbar bg-slate-700 text-white shadow-2xl border-cyan-200 mb-4">
+      <div className="navbar bg-slate-700  text-white shadow-2xl border-cyan-200 mb-4">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -71,7 +71,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="text-3xl  menu  menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="text-3xl  menu  menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52"
             >
               {Navlinks}
             </ul>
