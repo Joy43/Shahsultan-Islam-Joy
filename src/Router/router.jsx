@@ -4,7 +4,6 @@ import Mainlayout from "../Layout/Mainlayout";
 import Home from "../Pages/Home/Home/Home";
 import Aboutus from "../Pages/Home/Aboutus/AboutUs";
 
-import AddSite from "../Pages/Home/Portfolliosite/AddSite/AddSite";
 import Motionportfolli from "../Pages/Home/Portfolliosite/Site1/Motionportfollio";
 import Contact from "../Pages/Contact/Contact";
 import ContactInfo from "../Pages/Dashboad/Contactinfo/ContactInfo";
@@ -50,10 +49,6 @@ export const router = createBrowserRouter([
       {
         path: "userInfo",
         element: <UserInfo></UserInfo>,
-      },
-      {
-        path: "addsite",
-        element: <AddSite></AddSite>,
       },
     ],
   },

@@ -126,7 +126,7 @@ const Aboutus = () => {
 
   return (
     <div>
-      <div className="text-center items-center text-sky-400 shadow-md text-4xl ">
+      <div className="text-center m-4 items-center text-sky-400 shadow-md text-4xl ">
         {/* ----------type writing---------------- */}
         <Typewriter
           options={{

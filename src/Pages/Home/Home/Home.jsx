@@ -1,21 +1,21 @@
+import AnimationComponent from "../../Animation/animatedbg";
 import Contact from "../../Contact/Contact";
 import Feedback from "../../Feedback/Feedback";
 import ModalFeedback from "../../Feedback/ModalFeedback";
 
 import Allskill from "../../SkillsProgress/Allskill";
-import SkillProgress from "../../SkillsProgress/SkillProgress";
+
 import SkillProgressBars from "../../SkillsProgress/Tailwindcss";
 import Aboutus from "../Aboutus/AboutUs";
-import Banner from "../Banner/Banner";
-import Certificate from "../Certificate/certificate";
+
 import Motionportfolli from "../Portfolliosite/Site1/Motionportfollio";
 import { Slider } from "../slider/Slider";
 
 const Home = () => {
   return (
     <div>
+      <AnimationComponent></AnimationComponent>
       <div className="mx-auto ">
-        {/* <Banner></Banner> */}
         <Slider></Slider>
       </div>
       <div>
@@ -37,10 +37,9 @@ const Home = () => {
       <div>
         <Feedback></Feedback>
       </div>
-      <div className="bg-red-500">
+      <div className="">
         <ModalFeedback></ModalFeedback>
       </div>
-      <Certificate></Certificate>
     </div>
   );
 };

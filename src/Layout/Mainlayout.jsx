@@ -18,10 +18,11 @@ const MainLayout = () => {
   return (
     <div>
       {isLoading ? (
-        <Loader></Loader> // Corrected spelling
+        <Loader></Loader>
       ) : (
         <div>
           <Navbar></Navbar>
+
           <Outlet></Outlet>
           <Footer></Footer>
         </div>
@@ -30,4 +31,4 @@ const MainLayout = () => {
   );
 };
 
-export default MainLayout; 
+export default MainLayout;

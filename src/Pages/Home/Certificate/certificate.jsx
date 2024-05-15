@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const Certificate = () => {
   const certificateData = [
     {
@@ -5,19 +7,21 @@ const Certificate = () => {
       name: "Full stack web development course",
       subtitle:
         "Completed Full stack Web Development Course with Programming Hero",
-      image: "https://ibb.co/hRVf8F1",
+      image: "https://i.ibb.co/pxkhpct/certificate-page-0001.jpg",
     },
   ];
 
-  const handleDownload = (certificateId) => {
-    if (!certificateId) {
-      console.error("No certificate ID provided");
-      return;
-    }
-    const downloadLink = `https://drive.google.com/uc?export=download&id=${certificateId}`;
-    const downloadElement = document.createElement("a");
-    downloadElement.href = downloadLink;
-    downloadElement.click();
+  const [open, setOpen] = useState(false);
+  const [selectedCertificate, setSelectedCertificate] = useState(null);
+
+  const handleClickToOpen = (certificate) => {
+    setSelectedCertificate(certificate);
+    setOpen(true);
+  };
+
+  const handleToClose = () => {
+    setOpen(false);
+    setSelectedCertificate(null);
   };
 
   return (
@@ -43,15 +47,32 @@ const Certificate = () => {
           <div className="text-center">
             {certificate.id && (
               <button
-                onClick={() => handleDownload(certificate.id)}
+                onClick={() => handleClickToOpen(certificate)}
                 className="rounded-lg bg-slate-800 px-6 py-2 text-[12px] font-semibold text-white duration-300 hover:bg-slate-950 sm:text-sm md:text-base"
               >
-                Download Now
+                Show Now
               </button>
             )}
           </div>
         </div>
       ))}
+      {open && selectedCertificate && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="relative bg-white rounded-lg p-4">
+            <button
+              onClick={handleToClose}
+              className="absolute text-red-500 bg-black rounded-full text-2xl top-2 right-2"
+            >
+              &times;
+            </button>
+            <img
+              src={selectedCertificate.image}
+              alt={selectedCertificate.name}
+              className="h-auto w-full max-w-lg"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

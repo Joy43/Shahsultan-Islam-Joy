@@ -10,18 +10,18 @@ import { BsSunFill } from "react-icons/bs";
 const Navbar = () => {
   // -----------------     dark mode    ---------------
 
-  const [isDarkMode, setDarkMode] = useState(false);
-  const toogleTheame = () => {
-    const htmlElement = document.documentElement;
-    const currentTheme = htmlElement.getAttribute("data-theme");
-    setDarkMode((prevDarMode) => !prevDarMode);
-    if (currentTheme === "night") {
-      htmlElement.setAttribute("data-theme", "corporate");
-    } else {
-      htmlElement.setAttribute("data-theme", "night");
-    }
-  };
-  const themeIconSize = "30px";
+  // const [isDarkMode, setDarkMode] = useState(false);
+  // const toogleTheame = () => {
+  //   const htmlElement = document.documentElement;
+  //   const currentTheme = htmlElement.getAttribute("data-theme");
+  //   setDarkMode((prevDarMode) => !prevDarMode);
+  //   if (currentTheme === "night") {
+  //     htmlElement.setAttribute("data-theme", "corporate");
+  //   } else {
+  //     htmlElement.setAttribute("data-theme", "night");
+  //   }
+  // };
+  // const themeIconSize = "30px";
 
   const Navlinks = (
     <>
@@ -89,7 +89,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end gap-4">
           {/* -------theme --------------*/}
-          <div>
+          {/* <div>
             <button
               className="text-[#FF3811] btn btn-active btn-ghost "
               onClick={toogleTheame}
@@ -100,7 +100,7 @@ const Navbar = () => {
                 <BsSunFill size={themeIconSize} />
               )}
             </button>
-          </div>
+          </div> */}
           {/* ----------download resume----------- */}
           <div>
             <a href={CV} download>
