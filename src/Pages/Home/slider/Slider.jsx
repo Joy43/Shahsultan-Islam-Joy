@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 import image1 from "../../../assets/slide/profile.gif";
 import image2 from "../../../assets/slide/developer.gif";
 import image5 from "../../../assets/slide/Skills.gif";
-import image6 from "../../../assets/slide/Contact.gif";
+import image6 from "../../../assets/slide/programming chart.gif";
 
 export const Slider = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
-  const sliders = [image1, image2, image5, image6];
+  const sliders = [image1, image6, image2, image5];
   const nextSlider = () =>
     setCurrentSlider((currentSlider) =>
       currentSlider === sliders.length - 1 ? 0 : currentSlider + 1

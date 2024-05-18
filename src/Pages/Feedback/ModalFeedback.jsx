@@ -2,7 +2,7 @@ import { useState } from "react";
 import AddFeedback from "./AddFeedback";
 import feedbackimg from "../../assets/portfollio/feedback/Feedback Request.png";
 import { TbArrowBigRightLineFilled } from "react-icons/tb";
-import { BsSendPlusFill } from "react-icons/bs";
+
 const ModalFeedback = () => {
   const [openModal, setOpenModal] = useState(false);
   return (
@@ -24,14 +24,34 @@ const ModalFeedback = () => {
               <div onClick={() => setOpenModal(true)} className="stat">
                 <div className="stat-figure bg-green text-primary"></div>
                 <div className="stat-title  ">
-                  <button className=" flex items-center text-lg gap-2 bg-blue-500  hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                  {/* <button className=" flex items-center text-lg gap-2 bg-blue-500  hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
                     <span className="animate-ping">
                       <BsSendPlusFill />
                     </span>
                     Add Now Feedback
+                  </button> */}
+                  <button
+                    className="bg-white text-gray-800
+                   font-bold rounded border-b-2 border-green-500
+                    hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center"
+                  >
+                    <span className="mr-2">Send Feedback</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentcolor"
+                        d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
+                      ></path>
+                    </svg>
                   </button>
                 </div>
-                <div className="stat-value text-primary ">+9 Feedback</div>
+                <div className="stat-value text-center text-lg ">
+                  +9 Feedback
+                </div>
               </div>
             </div>
             {/* -------right side--------- */}
@@ -49,14 +69,34 @@ const ModalFeedback = () => {
                     : "-translate-y-20 opacity-0 duration-150"
                 }`}
               >
-                <button
+                {/* <button
                   onClick={() => {
                     setOpenModal(false);
                   }}
                   className="mr-0 mx-auto flex bg-slate-950 text-white px-3 py-2 rounded-lg mb-6"
                 >
                   Close
+                </button> */}
+                <button
+                  onClick={() => {
+                    setOpenModal(false);
+                  }}
+                  className="bg-white text-gray-800 font-bold rounded border-b-2 border-red-500 hover:border-red-600 hover:bg-red-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center"
+                >
+                  <span className="mr-2">Close</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentcolor"
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+                    />
+                  </svg>
                 </button>
+
                 <AddFeedback></AddFeedback>
               </div>
             </div>
