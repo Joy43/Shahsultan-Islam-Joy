@@ -29,6 +29,11 @@ import techicon from "../../../../assets/icon/tech.png";
 import hotel from "../../../../assets/icon/logo.png";
 import convert from "../../../../assets/icon/ourconvert.png";
 import scanner from "../../../../assets/icon/scannerpre.png";
+// -------------lms----------
+import Homelms from "../../../../assets/portfollio/lms/DB-Learn.png";
+import coverlms from "../../../../assets/portfollio/lms/Cover-img.png";
+import leftImagelms from "../../../../assets/portfollio/lms/left side.png";
+import iconlmd from "../../../../assets/portfollio/lms/Favicon.png";
 
 const projects = [
   {
@@ -39,6 +44,15 @@ const projects = [
     rightImage: tecgleft,
     description: "A company that produces electronics components.",
     link: "https://bespoke-pothos-a257c1.netlify.app/",
+  },
+  {
+    icon: iconlmd,
+    name: "DB-Learn(lms)",
+    cover: coverlms,
+    leftImage: Homelms,
+    rightImage: leftImagelms,
+    description: "Online learning system management(lms)",
+    link: "https://db-learn.vercel.app",
   },
   {
     icon: hotel,
@@ -154,6 +168,7 @@ const Motionportfolli = () => {
                       in as admins.
                     </h2>
                   </div>
+                  {/* ----------button--------------- */}
                   <div className="text-center m-6">
                     <a href={project.link}>
                       <button className="btn btn-active btn-secondary">
