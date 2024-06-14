@@ -7,6 +7,7 @@ import Allskill from "../../SkillsProgress/Allskill";
 import SkillProgressBars from "../../SkillsProgress/Progressbar";
 
 import Aboutus from "../Aboutus/AboutUs";
+import LatestProject from "../LatestProject/LatestProject";
 
 import Motionportfolli from "../Portfolliosite/Site1/Motionportfollio";
 import { Slider } from "../slider/Slider";
@@ -32,11 +33,15 @@ const Home = () => {
       </div>
 
       <div>
+        <LatestProject></LatestProject>
+      </div>
+      <div>
         <Contact></Contact>
       </div>
       <div>
         <Feedback></Feedback>
       </div>
+
       <div className="">
         <ModalFeedback></ModalFeedback>
       </div>

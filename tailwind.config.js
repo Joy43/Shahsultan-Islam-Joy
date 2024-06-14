@@ -6,6 +6,20 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  extend: {
+    // Extend the theme to include custom utilities
+    scrollbar: {
+      hide: {
+        /* Hide scrollbar for Chrome, Safari, and Opera */
+        '&::-webkit-scrollbar': {
+          display: 'none',
+        },
+        /* Hide scrollbar for IE, Edge, and Firefox */
+        '-ms-overflow-style': 'none',
+        'scrollbar-width': 'none',
+      },
+    },
+  },
   daisyui: {
     themes: [
       "light",

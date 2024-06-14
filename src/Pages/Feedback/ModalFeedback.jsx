@@ -35,7 +35,6 @@ const ModalFeedback = () => {
                    font-bold rounded border-b-2 border-green-500
                     hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center"
                   >
-                    <span className="mr-2">Send Feedback</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -47,6 +46,7 @@ const ModalFeedback = () => {
                         d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
                       ></path>
                     </svg>
+                    <span className="mr-2">Send Feedback</span>
                   </button>
                 </div>
                 <div className="stat-value text-center text-lg ">
