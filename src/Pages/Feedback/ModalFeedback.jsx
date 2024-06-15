@@ -24,18 +24,12 @@ const ModalFeedback = () => {
               <div onClick={() => setOpenModal(true)} className="stat">
                 <div className="stat-figure bg-green text-primary"></div>
                 <div className="stat-title  ">
-                  {/* <button className=" flex items-center text-lg gap-2 bg-blue-500  hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-                    <span className="animate-ping">
-                      <BsSendPlusFill />
-                    </span>
-                    Add Now Feedback
-                  </button> */}
                   <button
                     className="bg-white text-gray-800
                    font-bold rounded border-b-2 border-green-500
                     hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center"
                   >
-                    <svg
+                    {/* <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -45,12 +39,21 @@ const ModalFeedback = () => {
                         fill="currentcolor"
                         d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
                       ></path>
+                    </svg> */}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                    >
+                      <path d="M21.5 11.2l-18-11c-.3-.2-.7-.2-1 0-.3.2-.5.5-.5.8v20c0 .3.2.6.5.8.1.1.2.1.3.1.2 0 .4-.1.5-.2l18-11c.2-.2.3-.5.3-.8s-.1-.6-.3-.8z" />
                     </svg>
+
                     <span className="mr-2">Send Feedback</span>
                   </button>
                 </div>
                 <div className="stat-value text-center text-lg ">
-                  +9 Feedback
+                  +10 Feedback
                 </div>
               </div>
             </div>

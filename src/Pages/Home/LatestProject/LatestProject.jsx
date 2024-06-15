@@ -75,11 +75,11 @@ const LatestProject = () => {
           }}
         />
       </div>
-      <div className="gap-6 grid grid-cols-2 text-white m-6">
+      <div className="gap-6 grid lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 text-white m-6">
         {projects.map((project, index) => (
           <Card
             key={project.id}
-            className="w-[600px] bg-[#17184dee] hover:border hover:border-primary grid rounded-lg shadow-lg borde"
+            className="w-[580px] bg-[#17184dee] hover:border hover:border-primary grid rounded-lg shadow-lg borde"
           >
             <div
               className="h-[400px] overflow-auto rounded-s-md scrollbar-hide"

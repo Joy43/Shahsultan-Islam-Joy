@@ -40,7 +40,7 @@ export const Slider = () => {
             className="ease-linear duration-300 flex flex-col h-60 sm:h-96 md:h-[540px] transform-gpu relative"
             style={{ transform: `translateY(-${currentSlider * 100}%)` }}
           >
-            {/* sliders */}
+            {/*------------- sliders-------------- */}
             {sliders.map((_, inx) => (
               <div
                 key={inx}
