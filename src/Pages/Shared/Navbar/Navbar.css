@@ -1,0 +1,73 @@
+.navbar-container {
+    background-color: #e0e0e0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px;
+    height: auto;
+  }
+  
+  .menu li a {
+    padding: 10px 15px;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .menu li a:hover {
+    color: #007BFF;
+  }
+  
+  .neumorphic-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    background: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .neumorphic-button:hover {
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  }
+  
+  .neumorphic-button:active {
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+  }
+  
+  .neumorphic-button-message {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    background: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .neumorphic-button-message:hover {
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  }
+  
+  .neumorphic-button-message:active {
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+  }
+  

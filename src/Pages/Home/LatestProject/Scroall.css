@@ -1,0 +1,9 @@
+/* Add this CSS to your styles */
+.scroll-hidden::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  .scroll-hidden {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
