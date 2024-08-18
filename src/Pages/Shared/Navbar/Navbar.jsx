@@ -51,7 +51,7 @@ const Navbar = () => {
   );
   return (
     <div>
-      <div className="navbar bg-slate-700  text-white shadow-2xl border-cyan-200 mb-4">
+      <div className="navbar bg-[#3C2A7E]  text-white shadow-2xl border-cyan-200 mb-4">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -89,13 +89,13 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1 ">{Navlinks}</ul>
         </div>
         <div className="navbar-end gap-4">
-          {/* -------theme --------------*/}
+       
 
           {/* ----------download resume----------- */}
           <div>
             <a href={CV} download>
-              <Button className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none">
-                Download Resume
+              <Button className="align-middle  select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-amber-400 shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none">
+                Download CV
               </Button>
             </a>
           </div>
