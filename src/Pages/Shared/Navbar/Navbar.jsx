@@ -51,7 +51,7 @@ const Navbar = () => {
   );
   return (
     <div>
-      <div className="navbar bg-[#3C2A7E]  text-white shadow-2xl border-cyan-200 mb-4">
+      <div className="navbar bg-[#3C2A7E]  text-white shadow-2xl border-cyan-200 mb-14">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
