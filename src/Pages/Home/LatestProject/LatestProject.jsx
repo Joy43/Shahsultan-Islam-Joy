@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
 import { Card } from "keep-react";
-import Dblearn from "../../../assets/portfollio/latest/DB-Learn.png";
-import Techworld from "../../../assets/portfollio/latest/Home-page.png";
-import Emedicine from "../../../assets/portfollio/latest/E-Medicine.png";
-import Estore from "../../../assets/portfollio/latest/E-store.png";
+import Dblearn from "../../../assets/portfollio/latest/Dblearn.png";
+import Techworld from "../../../assets/portfollio/latest/worldteach.png";
+import Emedicine from "../../../assets/portfollio/latest/emedicine.png";
+import Estore from "../../../assets/portfollio/latest/estore.png";
 import Typewriter from "typewriter-effect";
 // Custom hook for continuous auto-scrolling effect
 const useAutoScroll = (refs) => {
