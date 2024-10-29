@@ -10,17 +10,22 @@ import Aboutus from "../Aboutus/AboutUs";
 import LatestProject from "../LatestProject/LatestProject";
 
 import Motionportfolli from "../Portfolliosite/Site1/Motionportfollio";
-import { Slider } from "../slider/Slider";
+
+import Myself from "./../Myself/newabout";
+
+
 
 const Home = () => {
   return (
     <div>
       <AnimationComponent></AnimationComponent>
       <div className="mx-auto ">
-        <Slider></Slider>
+     
+      <Myself/>
       </div>
       <div>
         <Aboutus></Aboutus>
+     
       </div>
       <div>
         <Allskill></Allskill>
