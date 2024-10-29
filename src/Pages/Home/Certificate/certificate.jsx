@@ -33,7 +33,7 @@ const Certificate = () => {
 
   return (
     <div>
-      <div className="flex gap-2 sm:flex-wrap-reverse ">
+      <div className="flex gap-2 sm:flex-wrap-reverse mt-24 ">
         {certificateData.map((certificate, index) => (
           <div
             key={index}

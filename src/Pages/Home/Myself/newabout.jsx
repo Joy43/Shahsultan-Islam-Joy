@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Typewriter from 'typewriter-effect';
 
-import image2 from "../../../assets/slide/developer.gif";
+import image1 from "../../../assets/slide/profile.gif";
+import { Link } from 'react-router-dom';
 
-import image4 from "../../../assets/slide/chart.gif";
+
 
 function Myself() {
-  const sliders = [ image2,  image4];
+  const sliders = [ image1];
   const [currentSlider, setCurrentSlider] = useState(0);
 
   useEffect(() => {
@@ -71,12 +72,12 @@ function Myself() {
             Designer and Developer devoted to crafting beautiful web experiences focused on simplicity and purpose.
           </p>
           <div className="flex justify-center lg:justify-start space-x-4 mt-6">
-            <a
-              href="#ContactMe"
+            <Link to="contact"
+              
               className="text-lg md:text-xl bg-orange-600 py-2 px-5 rounded-full hover:bg-orange-700 transition"
             >
               Contact Me
-            </a>
+            </Link>
             <button
               className="text-lg md:text-xl bg-orange-600 py-2 px-5 rounded-full hover:bg-orange-700 transition"
               aria-label="Celebration"
