@@ -2,6 +2,8 @@ import { useEffect, useRef } from "react";
 import { Card } from "keep-react";
 import Dblearn from "../../../assets/portfollio/latest/DB-Learn.png";
 import Techworld from "../../../assets/portfollio/latest/Home-page.png";
+import Emedicine from "../../../assets/portfollio/latest/E-Medicine.png";
+import Estore from "../../../assets/portfollio/latest/E-store.png";
 import Typewriter from "typewriter-effect";
 // Custom hook for continuous auto-scrolling effect
 const useAutoScroll = (refs) => {
@@ -58,6 +60,25 @@ const LatestProject = () => {
       description:
         "World Technologies .A company that produces electronics components.update Product editing and deletion User can buy products through international payment system(Stripe)",
       imgSrc: Techworld,
+      buttonText: "Live site",
+      buttonLink: "https://worldtecnoloy.vercel.app/",
+    },
+    {
+      id: 3,
+      title: "E-sore world",
+      description:
+        "World Technologies. A company that produces electronic components. Update product editing and deletion. Users can buy products through an international payment system (Stripe).",
+      imgSrc: Estore, // Using the imported image
+      buttonText: "Live site",
+      buttonLink: "https://worldtecnoloy.vercel.app/",
+    },
+    {
+      id: 4,
+      title: "E- Medicine store",
+      description:
+        "World Technologies. A company that produces electronic components. Update product editing and deletion. Users can buy products through an international payment system (Stripe).",
+      imgSrc: Emedicine, 
+   
       buttonText: "Live site",
       buttonLink: "https://worldtecnoloy.vercel.app/",
     },
