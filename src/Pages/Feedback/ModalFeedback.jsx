@@ -9,7 +9,7 @@ const ModalFeedback = () => {
   return (
     <div className="flex flex-col w-full lg:flex-row items-center shadow-2xl justify-center">
       <div className="flex-grow max-h-96  bg-base-300 rounded-lg p-4">
-        <img className="w-[800px] mx-auto h-80" src={feedbackimg} alt="Feedback" />
+        <img className="w-[500px] bg-transparent mx-auto h-80" src={feedbackimg} alt="Feedback" />
       </div>
 
       <div className="divider lg:divider-horizontal mx-4">
