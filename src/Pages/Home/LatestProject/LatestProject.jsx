@@ -71,17 +71,17 @@ const LatestProject = () => {
         "World Technologies. A company that produces electronic components. Update product editing and deletion. Users can buy products through an international payment system (Stripe).",
       imgSrc: Estore, // Using the imported image
       buttonText: "Live site",
-      buttonLink: "https://worldtecnoloy.vercel.app/",
+      buttonLink: "https://e-store-sigma-three.vercel.app/",
     },
     {
       id: 4,
       title: "E- Medicine store",
       description:
-        "World Technologies. A company that produces electronic components. Update product editing and deletion. Users can buy products through an international payment system (Stripe).",
+        "E- Medicine store. A company that produces electronic components. Update product editing and deletion. Users can buy products through an international payment system (Stripe).",
       imgSrc: Emedicine, 
    
       buttonText: "Live site",
-      buttonLink: "https://worldtecnoloy.vercel.app/",
+      buttonLink: "https://e-medicine-eight.vercel.app/",
     },
   ];
 
