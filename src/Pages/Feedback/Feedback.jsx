@@ -114,7 +114,7 @@ const Feedback = () => {
                 <a className="inline-flex items-center">
                   <img
                     alt="testimonial"
-                    src={each.fileUpload}
+                    src={each.imageUrl}
                     className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
                   />
                   <span className="flex-grow flex flex-col pl-4">

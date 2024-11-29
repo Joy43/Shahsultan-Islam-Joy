@@ -16,6 +16,13 @@ const Certificate = () => {
         "Completed Responsive web design Video course Elearn DB in bangladesh",
       image: "https://i.ibb.co/VWTrC36/web-design.jpg",
     },
+    {
+      id: "1nRPrVxOIIVWv-bLYg-stR7nLzfkRFK9",
+      name: "programming Hero Language Club",
+      subtitle:
+        "Completed programming Hero Language Club in bangladesh",
+      image: "https://i.ibb.co.com/dGW4PyT/Shahsultan-Islam-Joy-page-0001.jpg",
+    },
   ];
 
   const [open, setOpen] = useState(false);

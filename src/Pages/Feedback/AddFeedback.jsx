@@ -15,7 +15,7 @@ const AddFeedback = () => {
     designation: "",
     date: "",
     textarea: "",
-    imageUrl: "display_url",
+    imageUrl: "",
   });
 
   const AxiosIssuFeedbck = useFeedback();
@@ -25,17 +25,16 @@ const AddFeedback = () => {
 
     if (id === "fileUpload" && files.length > 0) {
       const file = files[0];
-      const formData = new FormData();
-      formData.append("image", file);
-      formData.append("key", image_hosting_key);
+      const imageData = new FormData();
+      imageData.append("image", file);
 
       try {
-        const response = await axios.post(image_hosting_api, formData);
+        const response = await axios.post(image_hosting_api, imageData);
         const imageUrl = response.data.data.url;
 
         setFormData((prevData) => ({
           ...prevData,
-          [id]: imageUrl,
+          imageUrl,
         }));
 
         setPreviewImage(imageUrl);
@@ -78,12 +77,12 @@ const AddFeedback = () => {
   };
 
   return (
-    <div>
-      <div className="max-w-4xl p-6 mx-auto bg-indigo-600 rounded-md shadow-md">
+    <div className="h-screen flex items-center justify-center bg-indigo-600">
+      <div className="max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md overflow-y-scroll h-[80%] w-[90%]">
         <form onSubmit={handleFormSubmit}>
           <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
             <div>
-              <label className="text-white">Email Address</label>
+              <label className="text-gray-700">Email Address</label>
               <input
                 id="emailAddress"
                 type="email"
@@ -94,7 +93,7 @@ const AddFeedback = () => {
               />
             </div>
             <div>
-              <label className="text-white">Name</label>
+              <label className="text-gray-700">Name</label>
               <input
                 id="name"
                 type="text"
@@ -104,7 +103,65 @@ const AddFeedback = () => {
                 onChange={handleInputChange}
               />
             </div>
-            {/* Add the rest of your fields */}
+            <div>
+              <label className="text-gray-700">Key Word</label>
+              <input
+                id="keyWord"
+                type="text"
+                placeholder="Key Word"
+                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:border-blue-500 focus:outline-none"
+                value={formData.keyWord}
+                onChange={handleInputChange}
+              />
+            </div>
+            <div>
+              <label className="text-gray-700">Designation</label>
+              <input
+                id="designation"
+                type="text"
+                placeholder="Designation"
+                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:border-blue-500 focus:outline-none"
+                value={formData.designation}
+                onChange={handleInputChange}
+              />
+            </div>
+            <div>
+              <label className="text-gray-700">Date</label>
+              <input
+                id="date"
+                type="date"
+                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:border-blue-500 focus:outline-none"
+                value={formData.date}
+                onChange={handleInputChange}
+              />
+            </div>
+            <div>
+              <label className="text-gray-700">Feedback</label>
+              <textarea
+                id="textarea"
+                placeholder="Write your feedback"
+                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:border-blue-500 focus:outline-none"
+                value={formData.textarea}
+                onChange={handleInputChange}
+              />
+            </div>
+            <div>
+              <label className="text-gray-700">Upload Image</label>
+              <input
+                id="fileUpload"
+                type="file"
+                accept="image/*"
+                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none"
+                onChange={handleInputChange}
+              />
+              {previewImage && (
+                <img
+                  src={previewImage}
+                  alt="Preview"
+                  className="w-32 h-32 mt-4 rounded-md"
+                />
+              )}
+            </div>
           </div>
           <div className="flex justify-center mt-6">
             <button

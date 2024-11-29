@@ -6,10 +6,10 @@ import Aboutus from "../Pages/Home/Aboutus/AboutUs";
 
 import Motionportfolli from "../Pages/Home/Portfolliosite/Site1/Motionportfollio";
 import Contact from "../Pages/Contact/Contact";
-import ContactInfo from "../Pages/Dashboad/Contactinfo/ContactInfo";
-import UserInfo from "../Pages/Dashboad/Dashboad/UserInfo/UserInfo";
-import DashBoadSidebar from "../Pages/Dashboad/Dashboad/Dashboad/DashBoadSidebar";
+
+
 import Certificate from "../Pages/Home/Certificate/certificate";
+import ContactInfo from "../Pages/Dashboad/Contactinfo/ContactInfo";
 
 export const router = createBrowserRouter([
   {
@@ -39,17 +39,10 @@ export const router = createBrowserRouter([
       },
       // ---------dashboad router-------
       {
-        path: "/dashboad",
-        element: <DashBoadSidebar></DashBoadSidebar>,
-      },
-      {
-        path: "/contactinfo",
-        element: <ContactInfo></ContactInfo>,
-      },
-      {
-        path: "userInfo",
-        element: <UserInfo></UserInfo>,
-      },
+        path:"/ContactInfo",
+        element:<ContactInfo/>
+      }
+      
     ],
   },
 ]);

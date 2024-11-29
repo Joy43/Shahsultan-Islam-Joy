@@ -70,7 +70,7 @@ const Contact = () => {
     }
   };
   return (
-    <div>
+    <div className="mt-16">
       <div className="grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-4xl  shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md  font-[sans-serif]">
         {/* ----------talk us------------ */}
         <div className="shadow-xl p-3">
