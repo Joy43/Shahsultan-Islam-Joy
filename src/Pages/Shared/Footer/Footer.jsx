@@ -158,7 +158,7 @@ const Footer = () => {
         <nav>
           <div className="grid grid-flow-col gap-4">
             {/* ------------linked----------- */}
-            <a href="https://www.linkedin.com/in/shahsultan-islam-joy/">
+            <a href="https://www.linkedin.com/in/ss-joy/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
